@@ -110,11 +110,20 @@ module Enumerable
 
     #my_map
 
-    def my_map
+    def my_map(x=nil)
 
-        mapped = []
-        self.my_each do |i|
-           mapped << yield(i)
+        if x==nil   
+            mapped = []
+            self.my_each do |i|
+              mapped << yield(i)
+            end
+
+        else
+            mapped = []
+            self.my_each do |i|
+              mapped << x.call(i)
+            end
+
         end
 
         return mapped 

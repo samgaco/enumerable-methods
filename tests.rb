@@ -42,3 +42,9 @@ print array.my_map { |n| n * 2 }
 
 #my_inject // Test Cases
 puts (1..200).my_inject{|sum, n| sum -n }
+
+#my_map // Test Cases
+print [2,3,4].my_map { |n| n * 2 }
+
+proba = Proc.new  { |n| n * 2 }
+print [2,3,4].my_map(proba)
