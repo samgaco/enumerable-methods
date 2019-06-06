@@ -28,7 +28,17 @@ puts ary.my_count(2)
 puts ary.my_count { |x| x%2 == 0 }
 
 
+#my_inject // Test Cases
+def multiply_els(arr)
+    arr.my_inject {|enum, i| enum*i}
+end
+
+print multiply_els([2,4,5])
+
+
 #my_map // Test Cases 
 print array.my_map { |n| n * 2 }
 
 
+#my_inject // Test Cases
+puts (1..200).my_inject{|sum, n| sum -n }

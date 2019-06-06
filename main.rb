@@ -127,16 +127,14 @@ module Enumerable
     def my_inject
 
         total = 0
-        accumulator = 0
-
+        
         Array(self).my_each_with_index do |i, ind|
            
-           if ind == 0
-            total += i
-           else
-            total += yield accumulator, i
-           end
-        
+            if ind == 0
+                total = i
+            else
+                total = yield total, i
+            end
         
         end
 
@@ -145,8 +143,3 @@ module Enumerable
 
 end
 
-
-
-
-puts (1..200).inject{|sum, n| sum - n }
-puts (1..200).my_inject{|sum, n| sum -n }
