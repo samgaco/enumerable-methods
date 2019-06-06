@@ -26,3 +26,9 @@ ary = [1,2,3,4,5]
 puts ary.my_count                  
 puts ary.my_count(2)     
 puts ary.my_count { |x| x%2 == 0 }
+
+
+#my_map // Test Cases 
+print array.my_map { |n| n * 2 }
+
+

@@ -108,18 +108,17 @@ module Enumerable
 
     def my_map
 
+        mapped = []
+        self.my_each do |i|
+           mapped << yield(i)
+        end
+
+        return mapped 
+
     end
 
 end
 
 
 
-array = [1,2,3]
-array.map { |n| n * 2 }
 
-puts "ok"
-
-ary = [1,2,3,4,5]
-puts ary.my_count                  
-puts ary.my_count(2)     
-puts ary.my_count { |x| x%2 == 0 }
