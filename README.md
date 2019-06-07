@@ -1,5 +1,8 @@
-# enumerable-methods
+# Enumerable Methods
 Enumerable Ruby methods from Scratch
 
-#Author
+## Description
+main.rb: Different basic ruby methods implemented from scractch with learning purposes
+
+## Author
 Samuel García Companys - @samgaco - samuelgarciacompanys@gmail.com
