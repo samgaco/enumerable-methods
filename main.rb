@@ -31,7 +31,7 @@ module Enumerable
             end
         end
     
-      return selected
+       selected
     end
 
 
@@ -151,4 +151,3 @@ module Enumerable
     end
 
 end
-
